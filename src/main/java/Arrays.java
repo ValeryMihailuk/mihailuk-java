@@ -1,20 +1,23 @@
-import java.io.PrintStream;
 import java.util.Scanner;
 
 public class Arrays {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("введите размер массива");
+        System.out.print("Введите количество элементов в массиве: ");
         int size = in.nextInt();
-        int[] arr = new int[size];
-        System.out.println("введите элемент массива");
-        for (int i = 0; i < arr.length; i++)
-            arr[i] = in.nextInt();
-        for (int i = 0; i < arr.length; i++) {
-            int a = arr[i] % 3;
-            if (a == 0)
-                System.out.print("Числа кратные 3" + arr[i] + ", ");
+        if (size <= 0) {
+            System.out.println("Введено недопустимое значение");
+        } else {
+            int[] arr = new int[size];
+            System.out.println("Введите числовые элементы массива: ");
+            for (int i = 0; i < arr.length; i++)
+                arr[i] = in.nextInt();
+            System.out.println("Числа кратные 3: ");
+            for (int i = 0; i < arr.length; i++) {
+                int a = arr[i] % 3;
+                if (a == 0)
+                    System.out.print(arr[i] + " ");
+            }
         }
     }
 }
-

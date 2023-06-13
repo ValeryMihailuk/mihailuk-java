@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Names {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Введите имя: ");
+        System.out.print("Введите имя: ");
         String inputCheckName = input.nextLine();
         if (inputCheckName.equals("Вячеслав")) {
             System.out.println("Привет, Вячеслав");
