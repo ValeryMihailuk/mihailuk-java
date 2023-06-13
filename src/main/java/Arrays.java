@@ -13,7 +13,7 @@ public class Arrays {
         for (int i = 0; i < arr.length; i++) {
             int a = arr[i] % 3;
             if (a == 0)
-                System.out.print("Числа кратные 3"+ arr[i] + ", ");
+                System.out.print("Числа кратные 3" + arr[i] + ", ");
         }
     }
 }
